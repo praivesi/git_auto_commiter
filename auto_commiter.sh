@@ -1,5 +1,11 @@
 # $1 - master branch, $2 - stored commits branch
 
+## redirect to log file
+
+exec 3>&1 4>&2
+exec 1>auto_commiter.log 2>&1
+
+
 ## master branch
 
 git checkout $1
