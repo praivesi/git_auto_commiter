@@ -59,7 +59,7 @@ git checkout $1
 git cherry-pick $oldest_hash
 git reset HEAD~1
 git add .
-git restore --staged auto_commiter.sh
+git restore --staged auto_commiter.sh auto_commiter.log
 
 git commit -m "$oldest_msg"
 git push origin $1
