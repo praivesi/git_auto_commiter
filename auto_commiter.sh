@@ -3,6 +3,7 @@
 ## master branch
 
 git checkout $1
+git pull origin $1
 
 git log --pretty=oneline > output.txt
 head -n 1 output.txt > output2.txt
@@ -15,6 +16,7 @@ echo "latest_master_comm_msg = " $latest_master_comm_msg
 ## stored commits branch
 
 git checkout $2
+git pull origin $2
 
 git log --pretty=oneline > output.txt
 
